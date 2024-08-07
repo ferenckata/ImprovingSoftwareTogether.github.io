@@ -23,13 +23,6 @@
     ================================================== -->
     <script src="js/modernizr.js"></script>
 
-    <!-- favicons
-    ================================================== -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-
 </head>
 
 <body class="ss-bg-white">
@@ -62,53 +55,17 @@
 
                 <ul class="header__nav">
                     <li><a href="index.html" title="">Home</a></li>
-                    <!-- <li class="has-children">
-                        <a href="#0" title="">Categories</a>
+                    <li class="has-children">
+                        <a href="page-about.html" title="">Categories</a>
                         <ul class="sub-menu">
-                        <li><a href="category.html">Lifestyle</a></li>
-                        <li><a href="category.html">Health</a></li>
-                        <li><a href="category.html">Family</a></li>
-                        <li><a href="category.html">Management</a></li>
-                        <li><a href="category.html">Travel</a></li>
-                        <li><a href="category.html">Work</a></li>
+                        <li><a href="category_literature.html">Literature</a></li>
+                        <li><a href="category_examples.html">Examples</a></li>
+                        <li><a href="category_experience.html">Experience</a></li>
                         </ul>
                     </li>
-                    <li class="has-children current">
-                        <a href="#0" title="">Blog</a>
-                        <ul class="sub-menu">
-                        <li><a href="single-video.html">Video Post</a></li>
-                        <li><a href="single-audio.html">Audio Post</a></li>
-                        <li><a href="single-gallery.html">Gallery Post</a></li>
-                        <li><a href="single-standard.html">Standard Post</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="styles.html" title="">Styles</a></li> -->
                     <li><a href="page-about.html" title="">About</a></li>
                     <li><a href="page-contact.html" title="">Contact</a></li>
                 </ul> <!-- end header__nav -->
-<!-- 
-                <ul class="header__social">
-                    <li class="ss-facebook">
-                        <a href="https://facebook.com/">
-                            <span class="screen-reader-text">Facebook</span>
-                        </a>
-                    </li>
-                    <li class="ss-twitter">
-                        <a href="#0">
-                            <span class="screen-reader-text">Twitter</span>
-                        </a>
-                    </li>
-                    <li class="ss-dribbble">
-                        <a href="#0">
-                            <span class="screen-reader-text">Instagram</span>
-                        </a>
-                    </li>
-                    <li class="ss-behance">
-                        <a href="#0">
-                            <span class="screen-reader-text">Behance</span>
-                        </a>
-                    </li>
-                </ul> -->
 
             </nav> <!-- end header__nav-wrap -->
 
@@ -118,7 +75,6 @@
             </a>
 
         </header> <!-- end s-header -->
-
 
         <!-- search
         ================================================== -->
@@ -157,7 +113,7 @@
 
                     <div class="media-wrap entry__media">
                         <div class="entry__post-thumb">
-                            <img src="images/thumbs/single/standard/standard-1000.jpg" srcset="images/thumbs/single/standard/standard-2000.jpg 2000w, images/thumbs/single/standard/standard-1000.jpg 1000w, images/thumbs/single/standard/standard-500.jpg 500w" sizes="(max-width: 2000px) 100vw, 2000px" alt="">
+                            <!-- <img src="images/thumbs/single/standard/standard-1000.jpg" srcset="images/thumbs/single/standard/standard-2000.jpg 2000w, images/thumbs/single/standard/standard-1000.jpg 1000w, images/thumbs/single/standard/standard-500.jpg 500w" sizes="(max-width: 2000px) 100vw, 2000px" alt=""> -->
                         </div>
                     </div>
 
@@ -166,11 +122,11 @@
                         Testing
                         </h1>
                         <ul class="entry__header-meta">
-                            <li class="author">By <a href="#0">NCMM SQ team</a></li>
+                            <li class="author">By <a href="page-about.html">NCMM SQ team</a></li>
                             <li class="date">August 7, 2024</li>
                             <li class="cat-links">
-                                <a href="#0">Literature</a>
-                                <a href="#0">Examples</a>
+                                <a href="category_literature.html">Literature</a>
+                                <a href="category_examples.html">Examples</a>
                             </li>
                         </ul>
                     </div>
@@ -188,14 +144,13 @@
 
                             Revisiting testing multiple times in our sessions helps build an intuition about its nature and usage. These include discussing how to write unit tests in both Python (<code>pytest</code> and <code>unittest</code>) and R (<code>testthat</code>) as comparing languages allowed us to highlight the similarities and specificities of unit testing implementations. We also extensively discussed the type of functions to test, as bioinformaticians deal with both existing and new code that requires a different approach. We could also touch upon the automation of tests via continuous integration (e.g., GitHub Actions), which helps safely modify the code base throughout the development process and in maintenance. 
 
-                            Similarly to modularization, a recurring question was when to start adding tests. We advise testing early, departing from the mindset: “I will start tomorrow after implementing this new idea.” Peer reviews challenge the implementation, and code reviews provide an optimal platform to discuss tests. This aspect can be viewed as a scientific endeavor when we envision the edge cases and discuss the scientific problem the software aims to address.
+                            Similarly to <a href="https://ferenckata.github.io/ImprovingSoftwareTogether.github.io/modularization.html">modularization</a>, a recurring question was when to start adding tests. We advise testing early, departing from the mindset: “I will start tomorrow after implementing this new idea.” Peer reviews challenge the implementation, and code reviews provide an optimal platform to discuss tests. This aspect can be viewed as a scientific endeavor when we envision the edge cases and discuss the scientific problem the software aims to address.
 
                             When working with analysis pipelines, we can (not always safely) assume that the used packages are thoroughly tested by their developer, so what remains for us is to ensure that the steps connect well. It can be viewed as a form of integration testing, where different test examples can be passed through the pipeline. The developer of such a pipeline can think about cases that might break the flow (e.g., missing output from one step). The <a href="https://www.nextflow.io/docs/latest/index.html">Nextflow</a> workflow system has further support for testing. To check the behavior of the individual steps, one may consult the <a href="https://www.nf-test.com/">nf-test</a> framework.
                         </p>
 
 
                         <h2>Testing examples</h2>
-    
                         <p>
                             Here we present an example of testing novel scientific code, represented by a subset of tests used by the <a href=”https://github.com/ladislav-hovan/sponge”>SPONGE</a> package. The unit tests check the correctness of individual functions. Some of the tests shown test the <code>plogp</code> function, which calculates the value of <var>p*log2(p)</var> while treating the zero case correctly. Selected content of <code>tests/test_helper_functions.py</code> is shown below.
                         </p>
@@ -222,7 +177,7 @@
 </code></pre>
 
                         <p>
-                            Also tested is the calculation of the information content for individual motifs in the calculate_ic function. The motifs used by the tests are defined in a separate file <code>test_motifs</code> and accessible as <code>pytest</code> fixtures.
+                            Also tested is the calculation of the information content for individual motifs in the <code>calculate_ic</code> function. The motifs used by the tests are defined in a separate file <code>test_motifs</code> and accessible as <code>pytest</code> fixtures.
                         </p>
 
 <pre><code class="language-">
@@ -239,7 +194,7 @@
         no_info_pwm = pd.DataFrame(no_info_counts, columns=['A', 'C', 'G', 'T'])
         no_info_motif = Motif(matrix_id='XXX', name='XXX', counts=no_info_pwm)
 
-        yield no_info_motif
+    yield no_info_motif
 
     # A motif with perfect information
     @pytest.fixture
@@ -249,7 +204,7 @@
         all_A_pwm = pd.DataFrame(all_A_counts, columns=['A', 'C', 'G', 'T'])
         all_A_motif = Motif(matrix_id='XXX', name='XXX', counts=all_A_pwm)
 
-        yield all_A_motif
+    yield all_A_motif
 
     # A real motif for SOX2
     @pytest.fixture
@@ -257,7 +212,7 @@
         jdb_obj = jaspardb(release='JASPAR2024')
         SOX2_motif = jdb_obj.fetch_motif_by_id('MA0143.1')
         
-        yield SOX2_motif
+    yield SOX2_motif
 </code></pre>
 
                         <p>
@@ -265,22 +220,22 @@
                         </p>
 
 <pre><code class="language-">
-import pytest
-from test_motifs import *
-from sponge.helper_functions import calculate_ic
+    import pytest
+    from test_motifs import *
+    from sponge.helper_functions import calculate_ic
 
 
-def test_calculate_ic_no_info(no_info_motif):
-	assert calculate_ic(no_info_motif) == 0
+    def test_calculate_ic_no_info(no_info_motif):
+        assert calculate_ic(no_info_motif) == 0
 
 
-def test_calculate_ic_all_the_same(all_A_motif):
-	# Length of the test motif is 6, so expected value is 2 * 6 = 12
-	assert calculate_ic(all_A_motif) == 12
+    def test_calculate_ic_all_the_same(all_A_motif):
+        # Length of the test motif is 6, so expected value is 2 * 6 = 12
+        assert calculate_ic(all_A_motif) == 12
 
 
-def test_calculate_ic_SOX2(SOX2_motif):
-	assert calculate_ic(SOX2_motif) == pytest.approx(12.95, abs=0.01)
+    def test_calculate_ic_SOX2(SOX2_motif):
+        assert calculate_ic(SOX2_motif) == pytest.approx(12.95, abs=0.01)
 </code></pre>
 
                         <p>
@@ -288,307 +243,49 @@ def test_calculate_ic_SOX2(SOX2_motif):
                         </p>
 
 <pre><code class="language-">
-import os
-import pytest
-from sponge.sponge import Sponge
+    import os
+    import pytest
+    from sponge.sponge import Sponge
 
-# The test is marked as slow because the download of the bigbed file takes
-# a lot of time and the filtering is also time consuming unless parallelised
+    # The test is marked as slow because the download of the bigbed file takes
+    # a lot of time and the filtering is also time consuming unless parallelised
 
-@pytest.mark.slow
-def test_full_default_workflow(tmp_path):
+    @pytest.mark.slow
+    def test_full_default_workflow(tmp_path):
 
-    # Tests the full SPONGE workflow with default values
-    ppi_output = os.path.join(tmp_path, 'ppi_prior.tsv')
-    motif_output = os.path.join(tmp_path, 'motif_prior.tsv')
+        # Tests the full SPONGE workflow with default values
+        ppi_output = os.path.join(tmp_path, 'ppi_prior.tsv')
+        motif_output = os.path.join(tmp_path, 'motif_prior.tsv')
 
+        sponge_obj = Sponge(
+            run_default=True,
+            temp_folder=tmp_path,
+            ppi_outfile=ppi_output,
+            motif_outfile=motif_output,
+        )
 
-    sponge_obj = Sponge(
-        run_default=True,
-        temp_folder=tmp_path,
-        ppi_outfile=ppi_output,
-        motif_outfile=motif_output,
-    )
-
-
-    assert os.path.exists(ppi_output)
-    assert os.path.exists(motif_output)
+        assert os.path.exists(ppi_output)
+        assert os.path.exists(motif_output)
 </code></pre>
-
 
 
                         <p class="entry__tags">
                             <span>Post Tags</span>
         
                             <span class="entry__tag-list">
-                                <a href="#0">literature</a>
+                                <a href="#0">code</a>
                                 <a href="#0">bioinformatics</a>
-                                <!-- <a href="#0">varius</a>
-                                <a href="#0">turpis</a> -->
                             </span>
             
                         </p>
                     </div>
                     <!-- end entry content -->
 
-                    <!-- <div class="entry__pagenav">
-                        <div class="entry__nav">
-                            <div class="entry__prev">
-                                <a href="#0" rel="prev">
-                                    <span>Previous Post</span>
-                                    Tips on Minimalist Design 
-                                </a>
-                            </div>
-                            <div class="entry__next">
-                                <a href="#0" rel="next">
-                                    <span>Next Post</span>
-                                    Less Is More 
-                                </a>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- end entry__pagenav -->
-
-                    <!-- <div class="entry__related">
-                        <h3 class="h2">Related Articles</h3>
-
-                        <ul class="related">
-                            <li class="related__item">
-                                <a href="single-standard.html" class="related__link">
-                                    <img src="images/thumbs/masonry/walk-600.jpg" alt="">
-                                </a>
-                                <h5 class="related__post-title">Using Repetition and Patterns in Photography.</h5>
-                            </li>
-                            <li class="related__item">
-                                <a href="single-standard.html" class="related__link">
-                                    <img src="images/thumbs/masonry/dew-600.jpg" alt="">
-                                </a>
-                                <h5 class="related__post-title">Health Benefits Of Morning Dew.</h5>
-                            </li>
-                            <li class="related__item">
-                                <a href="single-standard.html" class="related__link">
-                                    <img src="images/thumbs/masonry/rucksack-600.jpg" alt="">
-                                </a>
-                                <h5 class="related__post-title">The Art Of Visual Storytelling.</h5>
-                            </li>
-                        </ul> -->
-                    <!-- </div> -->
-                    <!-- end entry related -->
-
                 </article> <!-- end column large-full entry-->
 
-
-                <!-- <div class="comments-wrap">
-
-                    <div id="comments" class="column large-12">
-
-                        <h3 class="h2">5 Comments</h3> -->
-        
-                        <!-- START commentlist -->
-                        <!-- <ol class="commentlist">
-        
-                            <li class="depth-1 comment">
-        
-                                <div class="comment__avatar">
-                                    <img class="avatar" src="images/avatars/user-01.jpg" alt="" width="50" height="50">
-                                </div>
-        
-                                <div class="comment__content">
-        
-                                    <div class="comment__info">
-                                        <div class="comment__author">Itachi Uchiha</div>
-        
-                                        <div class="comment__meta">
-                                            <div class="comment__time">April 30, 2019</div>
-                                            <div class="comment__reply">
-                                                <a class="comment-reply-link" href="#0">Reply</a>
-                                            </div>
-                                        </div>
-                                    </div>
-        
-                                    <div class="comment__text">
-                                    <p>Adhuc quaerendum est ne, vis ut harum tantas noluisse, id suas iisque mei. Nec te inani ponderum vulputate,
-                                    facilisi expetenda has et. Iudico dictas scriptorem an vim, ei alia mentitum est, ne has voluptua praesent.</p>
-                                    </div>
-        
-                                </div>
-        
-                            </li> -->
-                            <!-- end comment level 1 -->
-        
-                            <!-- <li class="thread-alt depth-1 comment">
-        
-                                <div class="comment__avatar">
-                                    <img class="avatar" src="images/avatars/user-04.jpg" alt="" width="50" height="50">
-                                </div>
-        
-                                <div class="comment__content">
-        
-                                    <div class="comment__info">
-                                        <div class="comment__author">John Doe</div>
-        
-                                        <div class="comment__meta">
-                                            <div class="comment__time">April 30, 2019</div>
-                                            <div class="comment__reply">
-                                                <a class="comment-reply-link" href="#0">Reply</a>
-                                            </div>
-                                        </div>
-                                    </div>
-        
-                                    <div class="comment__text">
-                                    <p>Sumo euismod dissentiunt ne sit, ad eos iudico qualisque adversarium, tota falli et mei. Esse euismod
-                                    urbanitas ut sed, et duo scaevola pericula splendide. Primis veritus contentiones nec ad, nec et
-                                    tantas semper delicatissimi.</p>
-                                    </div>
-        
-                                </div>
-        
-                                <ul class="children">
-        
-                                    <li class="depth-2 comment">
-        
-                                        <div class="comment__avatar">
-                                            <img class="avatar" src="images/avatars/user-03.jpg" alt="" width="50" height="50">
-                                        </div>
-        
-                                        <div class="comment__content">
-        
-                                            <div class="comment__info">
-                                                <div class="comment__author">Kakashi Hatake</div>
-        
-                                                <div class="comment__meta">
-                                                    <div class="comment__time">April 29, 2019</div>
-                                                    <div class="comment__reply">
-                                                        <a class="comment-reply-link" href="#0">Reply</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-        
-                                            <div class="comment__text">
-                                                <p>Duis sed odio sit amet nibh vulputate
-                                                cursus a sit amet mauris. Morbi accumsan ipsum velit. Duis sed odio sit amet nibh vulputate
-                                                cursus a sit amet mauris</p>
-                                            </div>
-        
-                                        </div>
-        
-                                        <ul class="children">
-        
-                                            <li class="depth-3 comment">
-        
-                                                <div class="comment__avatar">
-                                                    <img class="avatar" src="images/avatars/user-04.jpg" alt="" width="50" height="50">
-                                                </div>
-        
-                                                <div class="comment__content">
-        
-                                                    <div class="comment__info">
-                                                        <div class="comment__author">John Doe</div>
-        
-                                                        <div class="comment__meta">
-                                                            <div class="comment__time">April 29, 2019</div>
-                                                            <div class="comment__reply">
-                                                                <a class="comment-reply-link" href="#0">Reply</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-        
-                                                    <div class="comment__text">
-                                                    <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est
-                                                    etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</p>
-                                                    </div>
-        
-                                                </div>
-        
-                                            </li>
-        
-                                        </ul>
-        
-                                    </li>
-        
-                                </ul>
-        
-                            </li> -->
-                            <!-- end comment level 1 -->
-        
-                            <!-- <li class="depth-1 comment">
-        
-                                <div class="comment__avatar">
-                                    <img class="avatar" src="images/avatars/user-02.jpg" alt="" width="50" height="50">
-                                </div>
-        
-                                <div class="comment__content">
-        
-                                    <div class="comment__info">
-                                        <div class="comment__author">Shikamaru Nara</div>
-        
-                                        <div class="comment__meta">
-                                            <div class="comment__time">April 26, 2019</div>
-                                            <div class="comment__reply">
-                                                <a class="comment-reply-link" href="#0">Reply</a>
-                                            </div>
-                                        </div>
-                                    </div>
-        
-                                    <div class="comment__text">
-                                    <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.</p>
-                                    </div>
-        
-                                </div>
-        
-                            </li>  -->
-                            <!-- end comment level 1 -->
-        
-                        <!-- </ol> -->
-                        <!-- END commentlist -->
-
-                    <!-- </div> -->
-                    <!-- end comments -->
-
-                    <!-- <div class="column large-12 comment-respond"> -->
-
-                        <!-- START respond -->
-                        <!-- <div id="respond">
-            
-                            <h3 class="h2">Add Comment <span>Your email address will not be published</span></h3>
-            
-                            <form name="contactForm" id="contactForm" method="post" action="" autocomplete="off">
-                                <fieldset>
-            
-                                    <div class="form-field">
-                                        <input name="cName" id="cName" class="full-width" placeholder="Your Name" value="" type="text">
-                                    </div>
-            
-                                    <div class="form-field">
-                                        <input name="cEmail" id="cEmail" class="full-width" placeholder="Your Email" value="" type="text">
-                                    </div>
-            
-                                    <div class="form-field">
-                                        <input name="cWebsite" id="cWebsite" class="full-width" placeholder="Website" value="" type="text">
-                                    </div>
-            
-                                    <div class="message form-field">
-                                        <textarea name="cMessage" id="cMessage" class="full-width" placeholder="Your Message"></textarea>
-                                    </div>
-            
-                                    <input name="submit" id="submit" class="btn btn--primary btn-wide btn--large full-width" value="Add Comment" type="submit">
-            
-                                </fieldset>
-                            </form> -->
-                            <!-- end form -->
-            
-                        <!-- </div> -->
-                        <!-- END respond-->
-            
-                    <!-- </div> -->
-                    <!-- end comment-respond -->
-            
-                <!-- </div> -->
-                <!-- end comments-wrap -->
             </main>
 
         </div> <!-- end s-content -->
-
 
         <!-- footer
         ================================================== -->
