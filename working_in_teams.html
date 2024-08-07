@@ -5,7 +5,7 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>Literature review</title>
+    <title>Coding in teams</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -166,7 +166,7 @@
 
                     <div class="content__page-header entry__header">
                         <h1 class="display-1 entry__title">
-                        Overview of the current literature
+                        Coding in teams
                         </h1>
                         <ul class="entry__header-meta">
                             <li class="author">By <a href="#0">NCMM SQ team</a></li>
@@ -181,295 +181,36 @@
                     <div class="entry__content">
 
                         <p class="lead drop-cap">
-                            Software development practices in bioinformatics vary widely, with numerous available suggestions on how to start writing scientific code or improve development practices. Their usefulness often depends on prior training in computer science and specific scientific research fields. Interestingly, scholars with backgrounds in computer science and software development also regularly share their perspectives on the state of scientific software in bioinformatics and scientific computing in general in their respective journals. Meanwhile, bioinformaticians themselves (in bioinformatics journals) offer guidelines for best practices in software development. We examined the existing literature on these two aspects to better understand what practices are currently encouraged and how they are implemented. We aim to provide insight into tackling challenges of understanding, prioritization, and adopting good practices.
+                            The guidelines for bioinformaticians offer few suggestions on teamwork, and most encourage reaching out to others when one encounters a problem. On the other hand, in software-heavy endeavors, coding in teams is the norm. Here, we examine the specialized software engineering literature, which examines how to organize team coding activities effectively.
                         </p>
 
                         <p>
-                            Bioinformatics papers providing recommendations are plentiful and often share common themes. They may focus on specific suggestions, called rules or "tips and tricks," or broadly address good coding and data analysis practices, compiled into "guidelines." Other popular resources include online learning platforms, peer blog posts, open-source university lecture materials, and forums. These resources are crucial for bioinformaticians who are self-taught programmers.
+                            Indeed, programming as a collective practice is a critical notion in software engineering. Maximizing team cohesion while minimizing code coupling represents a central theme (<a href=”https://doi.org/10.1287/mnsc.1080.0921”>10.1287/mnsc.1080.0921</a>). The overall performance increases when team members are familiar with each other and together build problem-solving routines through cumulative experience (<a href=”https://doi.org/10.1287/mnsc.1080.0921”>10.1287/mnsc.1080.0921</a>). From a code writing perspective, adopting sound software design enforcing modularity and extensibility ensures the viability of a software project.From a software development perspective, one should prefer team management practices centered around communication and collective governance (<a href=”https://www.amazon.com/Psychology-Computer-Programming-Silver-Anniversary/dp/0932633420”>Weinberg G. M., The Psychology of Computer Programming: Silver Anniversary Edition</a>). Knowing who knows what speeds up problem-solving (<a href=”https://doi.org/10.1177/1046496420967764”>10.1177/1046496420967764</a>); time spent together and social factors ease technical knowledge transfer (<a href=”https://doi.org/10.1287/mnsc.1080.0921”>10.1287/mnsc.1080.0921</a>).
 
-                            However, prioritizing these guidelines and selecting and adapting the most fitting practices are challenging tasks. Some are easier for those with prior training in computer science or in specific scientific research fields. However, the suggested practices do not always align with mainstream software standards. Indeed, developing scientific software raises unique challenges that require adopting mainstream practices by carefully altering them to fit our needs while keeping their essence.
+                            We generally understand management as performing specific tasks: planning, monitoring resources, and tracking progression (<a href=”https://www.wrike.com/project-management-guide/faq/what-is-software-project-management/”>wrike.com</a>). Typically, a single individual, referred to as the “manager” of the project, takes on these functions. In this context, manager is a role rather than a particular person's title. When considering software project management, a strict division of labor is rarely found in the specific context of academic computational projects. Some tasks, such as risk assessment, budget, and time management, are discussed at the project's conception (e.g., during grant application) and thus decoupled from the actual software development phase. The remaining management tasks would often fall on the developer(s). Implicit decision-making is one of the critical challenges current bioinformatics projects face.
 
-                            To illustrate and discuss the current status of the literature, we selected various articles as entry points for bioinformaticians looking to enhance their programming skills. Their suggestions are summarized in the table below. Our first insight is that the sheer amount of practices can be numbing for a trainee with minimal coding experience. Undoubtedly, all of these practices help reduce the cost of development, improve reproducibility, or enable better science. However, adopting them by an individual researcher might take so long that their benefit cannot be reaped within the time frame of the position. Indeed, these articles often target early career researchers with minimal coding experience, so they frequently recommend both entry-level coding standards (see Software development 101 in Table 1) and advanced software solutions (see Reproducibility in Table 1).
+                            As agile code development is the primary recommendation for team management in the guidelines shown in the A <a href=”https://ferenckata.github.io/ImprovingSoftwareTogether.github.io/literature_review.html”>review</a> on software development practices in bioinformatics section, its relevance to academic settings is worth discussing. Agile methodologies, which emphasize iterative development, regular feedback, and flexibility, could significantly improve how teams handle the evolving demands and rapid changes typical in academic computational projects. Practices and methods aligned with agile prescriptions include planning a minimum viable product, documenting requirements, organizing stand-up meetings, defining and assigning tasks, pair programming, and code reviews. Many of these practices do not require the manager's presence but assume efficient and frequent communication within a team, a collegial work culture, and standardized procedures. The additional overhead in terms of time and resources needed when developing is offset by the benefits mentioned above regarding software resilience and improved team capabilities.
 
-                            Judging by the recurrence of the same themes across the years of publishing these papers, there are not too many successful ways of tackling this problem: too many concepts to follow, too little time to select the most fitting ones, let alone learning them. Inspired by software engineers, we asked whether teamwork would lower the bar to learn good practices collectively. When directly looking for team efforts in academic software development, we found that the literature for bioinformaticians rarely covers coding as a team or leveraging the expertise of multiple bioinformaticians in software development. Beginners are typically advised to seek help when encountering problems rather than collaborating. This approach includes consulting colleagues, finding mentors, or participating in online communities like <a href=”https://stackoverflow.com/”>Stack Overflow</a> or <a href=”https://www.biostars.org/”>Biostars</a> (<a href=”https://doi.org/10.1371/journal.pcbi.1008645”>10.1371/journal.pcbi.1008645</a>). However, the framework primarily emphasizes individual practices and specific scientific issues, insufficiently addressing team coding practices highlighted in software engineering literature (<a href=“https://faculty.washington.edu/ajko/books/cooperative-software-development/”>Ko2024</a>, <a href=”https://doi.org/10.5334/jors.35”>10.5334/jors.35</a>). The one exception of collectively improving coding practices at a team level within the bioinformatics community is the Code Clubs described by Hagan et al (<a href=”https://doi.org/10.1371/journal.pcbi.1008119”>10.1371/journal.pcbi.1008119</a>). These clubs encourage collective software development through code reviews, pair programming, and educational workshops or seminars.Similarly to Hagan et al, our experience indicates that working collectively towards better software engineering proficiency increases the likelihood of adopting critical practices. 
+                            Incentivizing collective ownership and governance promotes the adoption of best practices in software engineering among developers contributing to the project (<a href=”https://doi.org/10.1016/j.infsof.2009.11.004”>10.1016/j.infsof.2009.11.004</a>). Indeed, by aspiring to make any developer within the team interchangeable across the various ongoing tasks, software teams create an environment for robust testing, comprehensive documentation, and coherence across the project's different parts (<a href=”https://doi.org/10.1287/mnsc.1080.0921”>10.1287/mnsc.1080.0921</a>). Furthermore, exposing every developer to various tasks throughout the project development strengthens the knowledge and skill base of the team as a whole. It creates an improved mutual awareness of each team member's expertise. This mutual awareness, which can be thought of as a transactive memory system, is linked to increased team performance (<a href=”https://doi.org/10.1177/1046496420967764”>10.1177/1046496420967764</a>). These merits further improve the team's capacity to overcome technical challenges that will likely arise during software development.
 
-                            In summary, the journey towards better software development practices in bioinformatics is ongoing and multifaceted. It involves a combination of individual learning, collaborative efforts, and integrating advanced tools and methodologies to enhance the quality and reliability of scientific software.
+                            As the academic research environment and expected project outcomes (papers, tools, protocols, etc.) are significantly different from the environment and outcomes in the software industry, the guidelines defined by the industry need to be adjusted. A key difference is that the academic system encourages crediting individual researchers to aid their career progression. One adaptation we propose is that interactions between developers can happen even when they work on distinct projects, as these interactions will ensure compliance with the rules and increase software quality. Our proposition of building a learning community centered on coding is our attempt to bridge the gap between the merits of coding in teams and the reality of individually credited projects in the academic setting.
 
+                            In our research groups, we implemented an environment in which we, as a group, learn about and implement the software quality practices discussed above. We draw a visual metaphor where improving software quality is similar to a rock climbing exercise, with the top of the rock representing our goal of good quality software (figure below). To reach this goal, one needs to become proficient in the various concepts depicted by the holds. These concepts are selected from the literature and our professional experience but are not exhaustive, and each group can tailor them to their specific needs. The higher they are on the wall, the more advanced we consider the concepts to be. As the progress is cumulative, we show the holds representing related concepts that build upon each other in the same color. This way, we mimic traditional computer science education. The order of visiting the topics can vary between groups, but reiterating certain core concepts (e.g., modularization and testing) is highly valuable. Nevertheless, the most crucial point is that rock climbing requires a partner to belay you, just as we believe that other people's input helps us become better programmers.
                         </p>
 
-                        <!-- <p>
-                        <img src="images/wheel-1000.jpg" 
-                             srcset="images/wheel-2000.jpg 2000w, 
-                                     images/wheel-1000.jpg 1000w, 
-                                     images/wheel-500.jpg 500w" 
-                                     sizes="(max-width: 2000px) 100vw, 2000px" alt="">
+                        <p>
+                            <figure>
+                                <img src="images/wall_climbing_latest.png" srcset="images/wall_climbing_latest.png 2000w, images/wall_climbing_latest.png 1000w, images/wall_climbing_latest.png 500w" sizes="(max-width: 2000px) 100vw, 2000px" alt="climbing">
+                                <figcaption><b>Figure 1. An illustration comparing the improvement process in software writing to rock climbing.</b> DSA: data structures and algorithms, OOP: object-oriented programming, UML: Unified Modelling Language, CI: continuous integration, SCA: static code analysis</figcaption>
+                            </figure>
+                        </p>
+
+                        <!-- <h2>Large Heading</h2>
+    
+                        <p>
+                        Whatever
                         </p> -->
-
-                        <h2>Recommendations on how to improve software development</h2>
     
-                        <p>
-                        
-                        </p>
-    
-                        <head>
-                            <style>
-                            td {text-align: center;}
-                            th {text-align: center;}
-                            </style>
-                        </head>
-                        <table>
-                            <tr>
-                                <th>Recommendation</th>
-                                <th>References</th>
-                            </tr>
-                            <tr>
-                                <th colspan=2>Software development 101</th>
-                        </tr>
-                            <tr>
-                                <td>Sanity check on input parameters</td>
-                                <td>
-                        <a href=”https://doi.org/10.1371/journal.pcbi.1005412”>10.1371/journal.pcbi.1005412</a>
-                        </td>
-                            </tr>
-                            <tr>
-                                <td>Do not hard-code changeable parameters and paths</td>
-                                <td>
-                        <a href=”https://doi.org/10.1371/journal.pcbi.1005412”>10.1371/journal.pcbi.1005412</a>
-                        </td>
-                            </tr>
-                            <tr>
-                                <td>Do not require superuser privileges for installation and usage</td>
-                                <td>
-                        <a href=”https://doi.org/10.1371/journal.pcbi.1005412”>10.1371/journal.pcbi.1005412</a>
-                        </td>
-                            </tr>
-                            <tr>
-                                <th colspan=2>Advanced software development</th>
-                        </tr>
-                            <tr>
-                                <td>Usage of design patterns</td>
-                                <td>
-                        <a href=”https://doi.org/10.1016/j.jss.2020.110848”>10.1016/j.jss.2020.110848</a>
-                        </td>
-                            </tr>
-                            <tr>
-                                <td>Adoption of international best practice standards of software quality</td>
-                                <td>
-                        <a href=”https://doi.org/10.5281/zenodo.1172970”>10.5281/zenodo.1172970</a>
-                        </td>
-                            </tr>
-                            <tr>
-                                <td>Regular refactoring</td>
-                                <td>
-                        <a href=”https://doi.org/10.1016/j.jss.2020.110848”>10.1016/j.jss.2020.110848</a>
-                        </td>
-                            </tr>
-                            <tr>
-                                <th colspan=2>Software development process</th>
-                        </tr>
-                            <tr>
-                                <td>Continuous integration</td>
-                                <td>
-                        <a href=”https://doi.org/10.1016/j.jss.2020.110848”>10.1016/j.jss.2020.110848</a>, 
-                        <a href=”https://doi.org/10.1093/bib/bbw134”>10.1093/bib/bbw134</a>
-                        </td>
-                            </tr>
-                            <tr>
-                                <td>Agile software development methodology</td>
-                                <td>
-                        <a href=”https://doi.org/10.7717/peerj-cs.839”>10.7717/peerj-cs.839</a>, 
-                        <a href=”https://doi.org/10.1016/j.jss.2020.110848”>10.1016/j.jss.2020.110848</a>
-                        </td>
-                            </tr>
-                            <tr>
-                                <td>Educated choice of software development methodology</td>
-                                <td>
-                        <a href=”https://doi.org/10.1109/CSEET.2009.44”>10.1109/CSEET.2009.44</a>
-                        </td>
-                            </tr>
-                            <tr>
-                                <td>Independent review of source code</td>
-                                <td>
-                        <a href=”https://doi.org/10.1109/CSEET.2009.44”>10.1109/CSEET.2009.44</a>, 
-                        <a href=”https://doi.org/10.5281/zenodo.1172970”>10.5281/zenodo.1172970</a>, 
-                        <a href=”https://doi.org/10.1109/MIC.2014.88”>10.1109/MIC.2014.88</a>
-                        </td>
-                            </tr>
-                            <tr>
-                                <td>Code quality monitoring</td>
-                                <td>
-                        <a href=”https://doi.org/10.1016/j.jss.2020.110848”>10.1016/j.jss.2020.110848</a>
-                        </td>
-                            </tr>
-                            <tr>
-                                <td>Inclusion of appropriate license</td>
-                                <td>
-                        <a href=”https://doi.org/10.5281/zenodo.1172970”>10.5281/zenodo.1172970</a>, 
-                        <a href=”https://doi.org/10.1371/journal.pcbi.1005412”>10.1371/journal.pcbi.1005412</a>
-                        </td>
-                            </tr>
-                            <tr>
-                                <td>Cooperation between developers and users</td>
-                                <td>
-                        <a href=”https://doi.org/10.5281/zenodo.1172970”>10.5281/zenodo.1172970</a>
-                        </td>
-                            </tr>
-                            <tr>
-                                <th colspan=2>Testing and validation</th>
-                        </tr>
-                            <tr>
-                                <td>Establish validation and acceptance procedures</td>
-                                <td>
-                        <a href=”https://doi.org/10.5281/zenodo.1172970”>10.5281/zenodo.1172970</a>, 
-                        <a href=”https://doi.org/10.1016/j.jmoldx.2017.11.003”>10.1016/j.jmoldx.2017.11.003</a>
-                        </td>
-                            </tr>
-                            <tr>
-                                <td>Provide a small test set</td>
-                                <td>
-                        <a href=”https://doi.org/10.1371/journal.pcbi.1005412”>10.1371/journal.pcbi.1005412</a>
-                        </td>
-                            </tr>
-                            <tr>
-                                <td>Standardized tests</td>
-                                <td>
-                        <a href=”https://doi.org/10.1371/journal.pcbi.1005412”>10.1371/journal.pcbi.1005412</a>, 
-                        <a href=”https://doi.org/10.1016/j.jss.2020.110848”>10.1016/j.jss.2020.110848</a>, 
-                        <a href=”https://doi.org/10.7717/peerj-cs.839”>10.7717/peerj-cs.839</a>, 
-                        <a href=”https://doi.org/10.5281/zenodo.1172970”>10.5281/zenodo.1172970</a>, 
-                        <a href=”https://doi.org/10.1109/CSEET.2009.44”>10.1109/CSEET.2009.44</a>, 
-                        <a href=”https://doi.org/10.1371/journal.pcbi.1008645”>10.1371/journal.pcbi.1008645</a>
-                        </td>
-                            </tr>
-                            <tr>
-                                <td>Ensure reproducibility of results</td>
-                                <td>
-                        <a href=”https://doi.org/10.1371/journal.pcbi.1005412”>10.1371/journal.pcbi.1005412</a>
-                        </td>
-                            </tr>
-                            <tr>
-                                <th colspan=2>Reproducibility</th>
-                        </tr>
-                            <tr>
-                                <td>Standardized working environment and automation</td>
-                                <td>
-                        <a href=”https://doi.org/10.7717/peerj-cs.839”>10.7717/peerj-cs.839</a>, 
-                        <a href=”https://doi.org/10.5281/zenodo.1172970”>10.5281/zenodo.1172970</a>
-                        </td>
-                            </tr>
-                            <tr>
-                                <td>Version control</td>
-                                <td>
-                        <a href=”https://doi.org/10.1371/journal.pcbi.1005412”>10.1371/journal.pcbi.1005412</a>, 
-                        <a href=”https://doi.org/10.1016/j.jss.2020.110848”>10.1016/j.jss.2020.110848</a>, 
-                        <a href=”https://doi.org/10.5281/zenodo.1172970”>10.5281/zenodo.1172970</a>, 
-                        <a href=”https://doi.org/10.7717/peerj-cs.839”>10.7717/peerj-cs.839</a>, 
-                        <a href=”https://doi.org/10.7287/peerj.preprints.2996”>10.7287/peerj.preprints.2996</a>
-                        </td>
-                            </tr>
-                            <tr>
-                                <td>Rely on package managers</td>
-                                <td>
-                        <a href=”https://doi.org/10.1371/journal.pcbi.1005412”>10.1371/journal.pcbi.1005412</a>
-                        </td>
-                            </tr>
-                            <tr>
-                                <td>Containerization for portability</td>
-                                <td>
-                        <a href=”https://doi.org/10.7717/peerj-cs.839”>10.7717/peerj-cs.839</a>, 
-                        <a href=”https://doi.org/10.1371/journal.pcbi.1005412”>10.1371/journal.pcbi.1005412</a>
-                        </td>
-                            </tr>
-                            <tr>
-                                <td>Tagging of software version for reproducibility</td>
-                                <td>
-                        <a href=”https://doi.org/10.1371/journal.pcbi.1005412”>10.1371/journal.pcbi.1005412</a>
-                        </td>
-                            </tr>
-                            <tr>
-                                <th colspan=2>Documentation</th>
-                        </tr>
-                            <tr>
-                                <td>User (and developer) documentation</td>
-                                <td>
-                        <a href=”https://doi.org/10.7717/peerj-cs.839”>10.7717/peerj-cs.839</a>, 
-                        <a href=”https://doi.org/10.5281/zenodo.1172970”>10.5281/zenodo.1172970</a>, 
-                        <a href=”https://doi.org/10.1371/journal.pcbi.1005412”>10.1371/journal.pcbi.1005412</a>, 
-                        <a href=”https://doi.org/10.1109/CSEET.2009.44”>10.1109/CSEET.2009.44</a>, 
-                        <a href=”https://doi.org/10.1093/bib/bbw134”>10.1093/bib/bbw134</a>
-                        </td>
-                            </tr>
-                            <tr>
-                                <td>Requirements gathering</td>
-                                <td>
-                        <a href=”https://doi.org/10.7717/peerj-cs.839”>10.7717/peerj-cs.839</a>, 
-                        <a href=”https://doi.org/10.1109/CSEET.2009.44”>10.1109/CSEET.2009.44</a>
-                        </td>
-                            </tr>
-                            <tr>
-                                <td>Description of the software version used, its configurations, and parameters in publications</td>
-                                <td>
-                        <a href=”https://doi.org/10.5281/zenodo.1172970”>10.5281/zenodo.1172970</a>
-                        </td>
-                            </tr>
-                            <tr>
-                                <th colspan=2>Community effort</th>
-                        </tr>
-                            <tr>
-                                <td>Contribute to open-source development</td>
-                                <td>
-                        <a href=”https://doi.org/10.1109/MIC.2014.88”>10.1109/MIC.2014.88</a>
-                        </td>
-                            </tr>
-                            <tr>
-                                <td>Reuse existing (reliable) software</td>
-                                <td>
-                        <a href=”https://doi.org/10.1016/j.jss.2020.110848”>10.1016/j.jss.2020.110848</a>, 
-                        <a href=”https://doi.org/10.1371/journal.pcbi.1005412”>10.1371/journal.pcbi.1005412</a>
-                        </td>
-                            </tr>
-                            <tr>
-                                <td>Preferentially selecting freely available open-source software</td>
-                                <td>
-                        <a href=”https://doi.org/10.5281/zenodo.1172970”>10.5281/zenodo.1172970</a>
-                        </td>
-                            </tr>
-                            <tr>
-                                <td>Encourage user participation in the software development process</td>
-                                <td>
-                        <a href=”https://doi.org/10.5281/zenodo.1172970”>10.5281/zenodo.1172970</a>
-                        </td>
-                            </tr>
-                            <tr>
-                                <td>Recognition and assignment of adequate time for quality-assured development</td>
-                                <td>
-                        <a href=”https://doi.org/10.5281/zenodo.1172970”>10.5281/zenodo.1172970</a>, 
-                        <a href=”https://doi.org/10.1109/CSEET.2009.44”>10.1109/CSEET.2009.44</a>
-                        </td>
-                            </tr>
-                            <tr>
-                                <td>Recognition of software development as academic achievement</td>
-                                <td>
-                        <a href=”https://doi.org/10.5281/zenodo.1172970”>10.5281/zenodo.1172970</a>, 
-                        <a href=”https://doi.org/10.1109/MIC.2014.88”>10.1109/MIC.2014.88</a>
-                        </td>
-                            </tr>
-                            <tr>
-                                <td>Support for developer community for long-term maintenance (when applicable)</td>
-                                <td>
-                        <a href=”https://doi.org/10.5281/zenodo.1172970”>10.5281/zenodo.1172970</a>, 
-                        <a href=”https://doi.org/10.1109/MIC.2014.88”>10.1109/MIC.2014.88</a>
-                        </td>
-                            </tr>
-                            <tr>
-                                <td>Financial support for software development and maintenance</td>
-                                <td>
-                        <a href=”https://doi.org/10.1109/MIC.2014.88”>10.1109/MIC.2014.88</a>, 
-                        <a href=”https://doi.org/10.5281/zenodo.1172970”>10.5281/zenodo.1172970</a>
-                        </td>
-                            </tr>
-                        </table>
-
                         <!-- <blockquote>
                             <p>
                             For God so loved the world, that he gave his only Son, that whoever believes in 
@@ -479,18 +220,17 @@
                             </p>
                             <cite>John 3:16-17 ESV</cite>
                         </blockquote> -->
-
-<!-- <pre><code class="language-css">
-    code {
-    font-size: 1.4rem;
-    margin: 0 .2rem;
-    padding: .2rem .6rem;
-    white-space: nowrap;
-    background: #F1F1F1;
-    border: 1px solid #E1E1E1;	
-    border-radius: 3px;
-    }
-</code></pre> -->
+    
+                        <!-- <h3>Smaller Heading</h3>
+    
+                        <p>
+                        Odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque 
+                        corrupti dolores et quas molestias excepturi sint occaecati cupiditate non provident, 
+                        similique sunt in culpa. Aenean eu leo quam. Pellentesque ornare sem lacinia quam 
+                        venenatis vestibulum. Nulla vitae elit libero, a pharetra augue laboris in sit minim 
+                        cupidatat ut dolor voluptate enim veniam consequat occaecat fugiat in adipisicing 
+                        in amet Ut nulla nisi non ut enim aliqua laborum mollit quis nostrud sed sed.
+                        </p> -->
 <!-- 
                         <p>
                         Odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque 
