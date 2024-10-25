@@ -139,13 +139,17 @@
                         </p>
                         <p>
                             Testing is a central concept in team programming, as test coverage increases trust and allows any member (including the developer's future self) to add new features safely. However, as highlighted in the literature (<a href="https://doi.org/10.1016/j.infsof.2014.05.006">10.1016/j.infsof.2014.05.006</a>, <a href="https://doi.org/10.1109/MS.2008.85">10.1109/MS.2008.85</a>, <a href="https://doi.org/10.1109/MIC.2014.88">10.1109/MIC.2014.88</a>), testing is complex for scientific software. Scientific software development requires dedicated testing methods to maintain scientific integrity since unexpected discoveries can confound expected outcomes and error detection.
-
+                        </p>
+                        <p>
                             Scientists often evaluate the validity of a model but usually do not rigorously test the underlying code. This oversight arises from the common misconception that a model and its implementation are the same thing (<a href="https://doi.org/10.1016/j.infsof.2014.05.006">10.1016/j.infsof.2014.05.006</a>). As they are not, faults in the software can interfere with the model itself. The main challenge usually lies in viewing software testing as more than just validating the scientific features of the software on a small test dataset. This requires examining the software implementation from multiple perspectives through several test cases. We view testing not as a form of quality control that acts as a checkpoint but as part of an iterative development process.
-
+                        </p>
+                        <p>
                             Revisiting testing multiple times in our sessions helps build an intuition about its nature and usage. These include discussing how to write unit tests in both Python (<code>pytest</code> and <code>unittest</code>) and R (<code>testthat</code>) as comparing languages allowed us to highlight the similarities and specificities of unit testing implementations. We also extensively discussed the type of functions to test, as bioinformaticians deal with both existing and new code that requires a different approach. We could also touch upon the automation of tests via continuous integration (e.g., GitHub Actions), which helps safely modify the code base throughout the development process and in maintenance. 
-
+                        </p>
+                        <p>
                             Similarly to <a href="https://ferenckata.github.io/ImprovingSoftwareTogether.github.io/modularization.html">modularization</a>, a recurring question was when to start adding tests. We advise testing early, departing from the mindset: “I will start tomorrow after implementing this new idea." Peer reviews challenge the implementation, and code reviews provide an optimal platform to discuss tests. This aspect can be viewed as a scientific endeavor when we envision the edge cases and discuss the scientific problem the software aims to address.
-
+                        </p>
+                        <p>
                             When working with analysis pipelines, we can (not always safely) assume that the used packages are thoroughly tested by their developer, so what remains for us is to ensure that the steps connect well. It can be viewed as a form of integration testing, where different test examples can be passed through the pipeline. The developer of such a pipeline can think about cases that might break the flow (e.g., missing output from one step). The <a href="https://www.nextflow.io/docs/latest/index.html">Nextflow</a> workflow system has further support for testing. To check the behavior of the individual steps, one may consult the <a href="https://www.nf-test.com/">nf-test</a> framework.
                         </p>
 
